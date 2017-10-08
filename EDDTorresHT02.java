@@ -16,10 +16,10 @@ public class EDDTorresHT02 {
     
     public static void main(String[] args) {
       Scanner scan = new Scanner(System.in);
-      System.out.println("Enter a word to determine if it is a palindrome: ");     
-      String word = scan.nextLine();                  //user types word
+      System.out.println("Enter a word: ");     
+      String palabra = scan.nextLine();                 
 
-    if(Palindrome.isPalindrome(word)) {        
+    if(Palindrome.isPalindrome(palabra)) {        
         System.out.println("is a palindrome");
     } else {
         System.out.println("is not a palindrome\n");
