@@ -12,13 +12,13 @@ package ed.dtorresh.t02;
  * @author DianaAlessa
  */
 public class Palindrome{
-   public static boolean isPalindrome(String input)
+   public static boolean isPalindrome(String palabra)
      {
             Stack pila = new Stack();
-            input = input.replaceAll("\\s+", "");
-            input = input.toLowerCase();
-                for (int i = 0; i < input.length(); i++) {
-                    pila.push(input.charAt(i));
+            palabra = palabra.replaceAll("\\s+", "");
+            palabra = palabra.toLowerCase();
+                for (int i = 0; i < palabra.length(); i++) {
+                    pila.push(palabra.charAt(i));
                 }
              String returnString = "";
 
@@ -26,7 +26,7 @@ public class Palindrome{
                  returnString += pila.pop();
             }
             System.out.println(returnString);
-            return returnString.equals(input);
+            return returnString.equals(palabra);
      }
 }
 
